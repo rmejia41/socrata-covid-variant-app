@@ -197,6 +197,9 @@ def update_graph(filtered_data, graph_type):
 #     port = int(os.environ.get('PORT', 52236)) #52235
 #     app.run_server(debug=False, host='0.0.0.0', port=port)
 
+# if __name__ == '__main__':
+#     #port = int(os.environ.get('PORT', 52236)) #52235
+#     app.run_server(debug=False, port = 8050)
+
 if __name__ == '__main__':
-    #port = int(os.environ.get('PORT', 52236)) #52235
-    app.run_server(debug=False, port = 8050)
+    app.run_server(host='0.0.0.0',debug=True)
